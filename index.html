@@ -23,7 +23,6 @@
     <article id="artcheader">
         <a href="#">colaborar</a> <p>LOGO</p> <a href="#">saiba mais</a>
     </article>
-
         <!--o main e centralizado para celulares com quinhentos pixels ate 768px -->
     <main>
         <!--lançamentos-->
@@ -59,11 +58,32 @@
             </section>
         </article>
     </main>
+    <!--menu que esconde-->
+    <menu id="menuu">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">filmes</a></li>
+            <li><a href="#">series</a></li>
+            <li><a href="#">ação</a></li>
+            <li><a href="#">comedia</a></li>
+            <li><a href="#">terror</a></li>
+
+        </ul>
+    </menu>
     <footer>
         <section id="sectionfooter">
             <a href="#">home</a>
-            <img id="menu" src="imagens/Very-Basic-Menu-icon.png" alt="">
+            <img id="menu" src="imagens/Very-Basic-Menu-icon.png" alt="" onclick="clickMenu()">
         </section>
     </footer>
+    <script>
+        function clickMenu (){
+            if (menuu.style.display == 'block') {
+               menuu.style.display = 'none'
+            }
+            else { menuu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

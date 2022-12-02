@@ -154,6 +154,31 @@ h1 {
         background-color: var(--corseleçaotexto);
         transition: .3s;
     }
+    /*menu escondido*/
+    menu#menuu {
+        position: fixed;
+        top: 0px;
+        display: flex;
+        justify-content: end;
+        background-color: black;
+        width: 50vw;
+        height: 100vh;
+        margin-left: 43.8%;
+        box-shadow: 1px 1px 8px rgba(255, 0, 0, 0.767);
+    }
+    #menuu > ul {
+        list-style: none;
+        line-height: 3.5em;
+        padding: 5px;
+        text-align: center;
+    }
+    li > a {
+        padding: 5px;
+    }
+    li > a:hover {
+        color: rgba(255, 0, 0, 0.89);
+        transition: .3s;
+    }
 }
 
 /*celares*/
