@@ -3,6 +3,7 @@
 /*telas de celulares e config global em todas as telas*/
 :root {
     --cortextobotao: rgba(255, 255, 255, 0.836);
+    --corseleçaotexto: rgba(255, 0, 0, 0.829);
 }
 * {
     padding: 0px;
@@ -44,7 +45,7 @@ h1 {
         font-size: 19px;
         text-decoration: none;
     }
-    a:hover {
+    menu > a:hover {
         padding-top: 5px;
         transition: .3s;
         color: white;
@@ -131,11 +132,26 @@ h1 {
     }
     section#sectionfooter {
         display: flex;
-        justify-content: space-between;
-        margin: ;
+        justify-content: space-around;
+        margin: 0px ;
     }
-    section img {
+    section#sectionfooter > a {
+        color: var(--cortextobotao);
+        text-transform: uppercase;
+    }
+    section#sectionfooter > a:hover {
+        transition: .3s;
+        color: var(--corseleçaotexto);
+        background-color: rgba(0, 0, 0, 0.808);
+        text-decoration: underline;
+    }
+    #menu {
         background-color: white;
+        margin: 0px 39px 0px 0px;
+    }
+    #menu:hover {
+        background-color: var(--corseleçaotexto);
+        transition: .3s;
     }
 }
 
