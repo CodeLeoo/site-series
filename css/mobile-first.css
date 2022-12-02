@@ -121,6 +121,22 @@ h1 {
         background-color: white;
         margin: 59px 9px;
     }
+    footer {
+        position: fixed;
+        top: 89%;
+        background-color: black;
+        height: 29px;
+        padding: 20px;
+        width: 100vw;
+    }
+    section#sectionfooter {
+        display: flex;
+        justify-content: space-between;
+        margin: ;
+    }
+    section img {
+        background-color: white;
+    }
 }
 
 /*celares*/
