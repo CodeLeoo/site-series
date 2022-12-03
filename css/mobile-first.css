@@ -35,6 +35,14 @@ h1 {
     header {
         height: 50px;
     }
+    /*titulos centralizados*/
+    .titulos {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        min-width: 99vw;
+
+    }
     menu {
         display: flex;
         justify-content: space-between;
@@ -67,10 +75,8 @@ h1 {
     }
     /*lançamento*/
     #artcdestaque {
-        height: 35vh;
+        height: 39vh;
         display: flex;
-        justify-content: center;
-        position: relative;
     }
     #artcdestaque h1 {
         color: white;
@@ -80,17 +86,19 @@ h1 {
     .destaques {
         border: 1px solid red;
         border-radius: 99px;
-        height: 79px;
-        width: 89px;
+        height: 89px;
+        min-width: 99px;
         margin: 65px 9px;
         background-color: white;
+        margin-left: 29px;
+        position: relative;
+        left: -23px;
+        
     }
     /*filmes*/
     #artcgeral {
-        height: 40vh;
+        height: 48.6vh;
         display: flex;
-        position: relative;
-        justify-content: center;
     }
     #artcgeral h1 {
         position: absolute;
@@ -99,16 +107,14 @@ h1 {
     .geral {
         border: 1px solid red;
         height: 159px;
-        width: 89px
+        min-width: 89px;
         background-color: white;
         margin: 59px 9px;
     }
     /*series*/
     #artcgeral2 {
-        height: 40vh;
+        height: 48.6vh;
         display: flex;
-        justify-content: center;
-        position: relative;
         background-color: black;
         padding-bottom: 59px;
     }
@@ -119,9 +125,16 @@ h1 {
     .geral {
         border: 1px solid red;
         height: 159px;
-        width: 89px;
+        min-width: 89px;
         background-color: white;
         margin: 59px 9px;
+    }
+    /*rolagem horizontal de destaques filme e series*/
+    .scroll {
+        overflow-x: auto;
+    }
+    scroll::-webkit-scrollbar {
+        width: 0;
     }
     footer {
         position: fixed;
@@ -159,12 +172,13 @@ h1 {
         position: fixed;
         top: 0px;
         display: flex;
-        justify-content: end;
+        justify-content: center;
         background-color: black;
         width: 50vw;
         height: 100vh;
         margin-left: 43.8%;
         box-shadow: 1px 1px 8px rgba(255, 0, 0, 0.767);
+        display: none;
     }
     #menuu > ul {
         list-style: none;
@@ -179,56 +193,17 @@ h1 {
         color: rgba(255, 0, 0, 0.89);
         transition: .3s;
     }
+
 }
+
+/*------------- divisão de breakgpoint-------------*/
 
 /*celares*/
 @media (min-width: 499px) {
-    /*cabealho*/
-    main {
-        display: block;
-        margin: auto;
-        max-width: 69vw;
-    }
-    header {
-        height: 50px;
-    }
-    menu {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 10px;
-    }
-    a {
-        color: var(--cortextobotao);
-        font-size: 19px;
-        text-decoration: none;
-        font-size: 21px;
-    }
-    a:hover {
-        padding-top: 5px;
-        transition: .3s;
-        color: white;
-    }
-    #artcheader {
-        display: flex;
-        justify-content: space-between;
-        background-image: url(../imagens/fundo-madeira.jpg);
-        color: var(--cortextobotao);
-        height: 50px;
-    }
-    #artcheader a {
-        padding: 15px 9px;
-    }
-    #artcheader a:hover {
-        color: white;
-        padding-top: 5px;
-        transition: .3s;
-    }
     /*lançamento*/
     #artcdestaque {
-        height: 35vh;
+        height: 39vh;
         display: flex;
-        justify-content: center;
-        position: relative;
     }
     #artcdestaque h1 {
         color: white;
@@ -238,37 +213,37 @@ h1 {
     .destaques {
         border: 1px solid red;
         border-radius: 99px;
-        height: 85px;
-        width: 95px;
+        height: 89px;
+        min-width: 99px;
         margin: 65px 9px;
         background-color: white;
+        margin-left: 29px;
+        position: relative;
+        left: -23px;
+        
     }
     /*filmes*/
     #artcgeral {
-        height: 40vh;
+        height: 48.6vh;
         display: flex;
-        position: relative;
-        justify-content: center;
     }
     #artcgeral h1 {
         position: absolute;
         display: inline-block;
-        margin: 9px 0px 0px 9px;
     }
     .geral {
         border: 1px solid red;
-        max-height: 159px;
-        max-width: 149px;
+        height: 159px;
+        min-width: 89px;
         background-color: white;
         margin: 59px 9px;
     }
     /*series*/
     #artcgeral2 {
-        height: 40vh;
+        height: 48.6vh;
         display: flex;
-        justify-content: center;
-        position: relative;
         background-color: black;
+        padding-bottom: 59px;
     }
     #artcgeral2 h1 {
         position: absolute;
@@ -277,7 +252,7 @@ h1 {
     .geral {
         border: 1px solid red;
         height: 159px;
-        width: 149px;
+        min-width: 89px;
         background-color: white;
         margin: 59px 9px;
     }

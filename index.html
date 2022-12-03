@@ -26,35 +26,77 @@
         <!--o main e centralizado para celulares com quinhentos pixels ate 768px -->
     <main>
         <!--lançamentos-->
-        <article id="artcdestaque">
-            <h1>Recem Lançados</h1>
+        <article class="scroll" id="artcdestaque">
+            <section class="titulos">
+                <h1>Recem Lançados</h1>
+            </section>
             <section class="destaques" id="destaque1">
             </section>
             <section class="destaques" id="destaque2">
             </section>
             <section class="destaques" id="destaque3">
             </section>
+            <section class="destaques" id="destaque4">
+            </section>
+            <section class="destaques" id="destaque5">
+            </section>
+            <section class="destaques" id="destaque6">
+            </section>
+            <section class="destaques" id="destaque7">
+            </section>
+            <section class="destaques" id="destaque8">
+            </section>
+            <section class="destaques" id="destaque9">
+            </section>
         </article>
 
         <!--filmes-->
-        <article id="artcgeral">
-            <h1>Filmes</h1>
+        <article class="scroll" id="artcgeral">
+            <section class="titulos">
+                <h1>Filmes</h1>
+            </section>
             <section class="geral" id="geral1">
             </section>
             <section class="geral" id="geral2">
             </section>
             <section class="geral" id="geral3">
             </section>
-        </article>
-
-        <!--series-->
-        <article id="artcgeral2">
-            <h1>series</h1>
+            <section class="geral" id="geral4">
+            </section>
             <section class="geral" id="geral5">
             </section>
             <section class="geral" id="geral6">
             </section>
             <section class="geral" id="geral7">
+            </section>
+            <section class="geral" id="geral8">
+            </section>
+            <section class="geral" id="geral9">
+            </section>
+        </article>
+
+        <!--series-->
+        <article class="scroll" id="artcgeral2">
+            <section class="titulos">
+                <h1>series</h1>
+            </section>
+            <section class="geral" id="geral5">
+            </section>
+            <section class="geral" id="geral6">
+            </section>
+            <section class="geral" id="geral7">
+            </section>
+            <section class="geral" id="geral8">
+            </section>
+            <section class="geral" id="geral9">
+            </section>
+            <section class="geral" id="geral11">
+            </section>
+            <section class="geral" id="geral12">
+            </section>
+            <section class="geral" id="geral13">
+            </section>
+            <section class="geral" id="geral14">
             </section>
         </article>
     </main>
@@ -73,15 +115,15 @@
     <footer>
         <section id="sectionfooter">
             <a href="#">home</a>
-            <img id="menu" src="imagens/Very-Basic-Menu-icon.png" alt="" onclick="clickMenu()">
+            <label for="sectionfooter"><img id="menu" src="imagens/Very-Basic-Menu-icon.png" alt="" onclick="clickMenu()"></label>
         </section>
     </footer>
     <script>
         function clickMenu (){
-            if (menuu.style.display == 'block') {
-               menuu.style.display = 'none'
+            if (menuu.style.display == 'none') {
+               menuu.style.display = 'block'
             }
-            else { menuu.style.display = 'block'
+            else { menuu.style.display = 'none'
             }
         }
     </script>
